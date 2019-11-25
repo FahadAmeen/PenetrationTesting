@@ -1,0 +1,79 @@
+<div>
+  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+
+
+    <label>
+      Title:
+      <input required type="text" formControlName="title" />
+      <div *ngIf="submitted && messageForm.controls.title.errors" class="errors">
+        <div *ngIf="messageForm.controls.title.errors.required">
+          Title is required.
+        </div>
+      </div>
+    </label>
+
+    <label>
+      Director:
+      <input required type="text" formControlName="director" />
+      <div *ngIf="submitted && messageForm.controls.director.errors" class="errors">
+        <div *ngIf="messageForm.controls.director.errors.required">
+          Director is required.
+        </div>
+      </div>
+    </label>
+
+    <label>
+      Genre:
+      <input required type="text" formControlName="genre" />
+      <div *ngIf="submitted && messageForm.controls.genre.errors" class="errors">
+        <div *ngIf="messageForm.controls.genre.errors.required">
+          Genre is required.
+        </div>
+      </div>
+    </label>
+
+    <label>
+      Release Date:
+      <input required type="date" formControlName="releaseDate" />
+      <div *ngIf="submitted && messageForm.controls.releaseDate.errors" class="errors">
+        <div *ngIf="messageForm.controls.releaseDate.errors.required">
+          Release Date is required.
+        </div>
+      </div>
+    </label>
+
+    <label>
+      Description:
+      <textarea formControlName="description"></textarea>
+      <div *ngIf="submitted && messageForm.controls.description.errors" class="errors">
+        <div *ngIf="messageForm.controls.description.errors.required">
+          Description is required.
+        </div>
+      </div>
+    </label>
+    <label>
+      Poster:
+      <input required type="file" accept="image/*" (change)="onFileChange($event)" formControlName="poster" />
+      <div *ngIf="submitted && messageForm.controls.poster.errors" class="errors">
+        <div *ngIf="messageForm.controls.poster.errors.required">
+          Poster is required.
+        </div>
+        <div *ngIf="messageForm.controls.poster.errors.FileTypeValidatorDirective">
+          Poster is required or must be only image.
+        </div>
+
+      </div>
+    </label>
+    <button type=" submit" value="Create" class="cta">Create</button>
+    <h5 *ngIf="success" class="text-success">Your form is valid</h5>
+    <div *ngIf="isPosted;else notPosted" class="alert alert-success" role="alert">
+      Record Created..
+    </div>
+  </form>
+
+  <!-- <ng-template #notPosted>
+    <div class="alert alert-danger" role="alert">
+      Error..
+    </div>
+  </ng-template> -->
+</div>

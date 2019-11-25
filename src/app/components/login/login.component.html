@@ -1,0 +1,91 @@
+<!-- <div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <label>
+            Email:
+            <input type="email" formControlName="email" autocomplete="email" />
+            <div *ngIf="submitted && loginForm.controls.email.errors" class="errors">
+                <div *ngIf="loginForm.controls.email.errors.required">
+                    Email is required.
+                </div>
+            </div>
+        </label>
+
+        <label>
+            Password:
+            <input formControlName="password" type="password" />
+            <div *ngIf="submitted && loginForm.controls.password.errors" class="errors">
+                <div *ngIf="loginForm.controls.password.errors.required">
+                    Password is required.
+                </div>
+            </div>
+        </label>
+        <input class="d-inline-block" type="checkbox" value="false" (change)="RememberMe($event)" id="remember">
+        <label class="d-inline-block" for="remember"> Remember Me</label><br>
+        <input type="submit" value="Sign in" class="cta" />
+    </form>
+
+</div> -->
+
+<!-- full card -->
+<div class="container card border-0 w-100 h-100 d-flex flex-row justify-content-between "
+    style="background-color: #F9FAFC">
+    <!-- left side -->
+    <div class="w-75 h-75 pr-4">
+        <img src="../../assets/background.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <!-- right side -->
+    <div class="w-50 h-50 d-flex flex-column align-content-center ">
+        <div class="my-5 d-flex flex-column ">
+            <h2>Welcome Back :)</h2>
+            <p>To keep connected with us please login with your personal information by email address and password
+                🔔 </p>
+        </div>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column ">
+            <!-- Email text input -->
+            <div class="d-flex flex-column ">
+                <div class="inputText mb-2">
+
+                    <span class="floating-label">Email</span>
+                    <input class="form-control" type="email" formControlName="email" autocomplete="email"
+                        [value]='retrievedEmail' />
+                </div>
+                <div class="mb-3 inputText">
+
+                    <span class="floating-label">Password</span>
+                    <input class="form-control" formControlName="password" type="password" autocomplete="off"
+                        [value]='retrievedpassword' />
+                </div>
+            </div>
+
+
+
+            <!-- Password text input -->
+            <!-- checkbox -->
+            <div class="d-flex flex-row w-100 justify-content-between d-inline-block align-items-baseline">
+
+                <input class="d-inline-block " type="checkbox" value="true" (change)="RememberMe($event)"
+                    id="remember">Remember Me
+                <input class="d-inline-block bg-transparent border-0 ml-4" type="button" id="forgot"
+                    value="Forgot Password?" disabled>
+
+            </div>
+
+
+
+            <!-- buttons -->
+            <div class="d-flex flex-row w-100 flex-start  py-3">
+
+
+                <!-- sign in btn -->
+                <input type="submit" value="Login Now" class="border-0 py-2 px-3  text-white mr-3 w-50"
+                    style="border-radius: 50px;background-color: #45B1EF" />
+                <!-- create btn -->
+                <input value="Create Account" class="border-0 py-2 px-3 bg-white text-dark w-50"
+                    style="border-radius: 50px" disabled />
+
+            </div>
+        </form>
+    </div>
+</div>

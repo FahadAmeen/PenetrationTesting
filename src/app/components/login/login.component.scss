@@ -1,0 +1,104 @@
+// $color: #272727;
+
+// label {
+//     display: block;
+
+//     input,
+//     textarea {
+//         display: block;
+//         width: 50%;
+//         margin-bottom: 20px;
+//         padding: 1em;
+//     }
+
+//     .errors {
+//         margin-top: -20px;
+//         background: lighten($color: $color, $amount: 10%);
+//         padding: 0.5em;
+//         display: inline-block;
+//         font-size: 0.9em;
+//         margin-bottom: 20px;
+//         color: white;
+//     }
+// }
+
+// .cta {
+//     background: lighten($color: $color, $amount: 10%);
+//     border: none;
+//     color: white;
+
+//     text-transform: uppercase;
+//     border-radius: 4px;
+//     padding: 1em;
+//     cursor: pointer;
+//     font-family: "Montserrat";
+// }
+
+// .results {
+//     margin-top: 50px;
+
+//     strong {
+//         display: block;
+//     }
+
+//     span {
+//         margin-bottom: 20px;
+//         display: block;
+//     }
+// }
+// .error {
+//     border: 2px solid red;
+// }
+
+// .has-error {
+//     color: red;
+//     background-color: red;
+// }
+
+// .has-success {
+//     color: black;
+//     background-color: green;
+// }
+
+// .checkbox-round {
+//     border-radius: 50%;
+//     outline: none;
+//     cursor: pointer;
+// }
+
+// .checkbox-round:checked {
+//     background-color: gray;
+// }
+
+// input:focus~.floating-label,
+// input:not(:focus):valid~.floating-label {
+//     top: 8px;
+//     bottom: 10px;
+//     left: 20px;
+//     font-size: 11px;
+//     opacity: 1;
+// }
+
+// .inputText {
+//     font-size: 14px;
+//     width: 200px;
+//     height: 35px;
+// }
+
+// .floating-label {
+//     position: absolute;
+//     pointer-events: none;
+//     left: 20px;
+//     top: 18px;
+//     transition: 0.2s ease all;
+// }
+
+
+// .ng-valid,
+// .ng-valid.required {
+//     background-color: lightgreen;
+// }
+
+// .ng-invalid:not(form) {
+//     background-color: lightcoral;
+// }

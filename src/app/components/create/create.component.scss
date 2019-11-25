@@ -1,0 +1,57 @@
+$color: #272727;
+
+label {
+  display: block;
+
+  input,
+  textarea {
+    display: block;
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 1em;
+  }
+
+  .errors {
+    margin-top: -20px;
+    background: lighten($color: $color, $amount: 10%);
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    color: white;
+  }
+}
+
+.cta {
+  background: lighten($color: $color, $amount: 10%);
+  border: none;
+  color: white;
+
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1em;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+.results {
+  margin-top: 50px;
+
+  strong {
+    display: block;
+  }
+
+  span {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+// .ng-valid,
+// .ng-valid.required {
+//   background-color: lightgreen;
+// }
+
+// .ng-invalid:not(form) {
+//   background-color: lightcoral;
+// }
