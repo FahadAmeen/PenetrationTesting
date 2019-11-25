@@ -66,7 +66,7 @@
     </label>
     <button type=" submit" value="Create" class="cta">Create</button>
     <h5 *ngIf="success" class="text-success">Your form is valid</h5>
-    <div *ngIf="isPosted;else notPosted" class="alert alert-success" role="alert">
+    <div *ngIf="isPosted" class="alert alert-success" role="alert">
       Record Created..
     </div>
   </form>
